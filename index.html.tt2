@@ -1,0 +1,11 @@
+[% WRAPPER html.tt2 %]
+<h1>Ingy dot Net's Projects</h1>
+
+<ul>
+[% FOR project = projects %]
+<li><b>
+<a href="http://github.com/ingydotnet/[% project.name %]">[% project.title %]</a>
+</b> - [% project.abstract %]</li>
+[% END %]
+</ul>
+[% END %]
