@@ -1,6 +1,7 @@
 [% WRAPPER html.tt2 %]
-<h1>Ingy dot Net's Projects</h1>
+<h1>Ingy dot Net:</h1>
 
+<h2>Major GitHub Projects</h2>
 <ul>
 [% FOR project = projects %]
 <li><b>
@@ -8,4 +9,14 @@
 </b> - [% project.abstract %]</li>
 [% END %]
 </ul>
+
+<h2>Talks</h2>
+<ul>
+[% FOR talk = talks %]
+<li><b>
+<a href="http://ingydotnet.github.com/[% project.name %]/">[% project.title %]</a>
+</b></li>
+[% END %]
+</ul>
+
 [% END %]
